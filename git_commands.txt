@@ -1,1 +1,70 @@
+$ cd documents
 
+stastm27@Stastny_pc MINGW64 ~/documents
+$ git clone https://github.com/stastmar/test.git
+Cloning into 'test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+stastm27@Stastny_pc MINGW64 ~/documents
+$ cd test
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (main)
+$ git checkout -b develop
+Switched to a new branch 'develop'
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$ touch test.txt
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$ git add .
+git commit -m "pridani test.txt ve vetvi develop"
+git push -u origin develop
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'stastm27@Stastny_pc.(none)')
+remote: Permission to stastmar/test.git denied to stastmar.
+fatal: unable to access 'https://github.com/stastmar/test.git/': The requested URL returned error: 403
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$ git config --global user.email "stastm27@cvut.cz"
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$ git config --global user.name "stastm27"
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$ git add .
+git commit -m "pridani test.txt ve vetvi develop"
+git push -u origin develop
+[develop 0154d27] pridani test.txt ve vetvi develop
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/stastmar/test/pull/new/develop
+remote:
+To https://github.com/stastmar/test.git
+ * [new branch]      develop -> develop
+branch 'develop' set up to track 'origin/develop'.
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$
