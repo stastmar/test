@@ -66,5 +66,15 @@ To https://github.com/stastmar/test.git
  * [new branch]      develop -> develop
 branch 'develop' set up to track 'origin/develop'.
 
+
+
+$ git rm --cached test.txt
+rm 'test.txt'
+
+stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
+$ git commit -m "odebran test.txt ze sledovani"
+[develop 0a496e9] odebran test.txt ze sledovani
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test.txt
 stastm27@Stastny_pc MINGW64 ~/documents/test (develop)
 $
